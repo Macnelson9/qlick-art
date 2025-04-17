@@ -8,16 +8,23 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- <div class="loader-container">
-        <div class="loader"></div>
-    </div> -->
+    <div class="loader-container">
+        <img src=".\assets\Coffee Circle Logo _ SVG _ Real Company _ Alphabet, Letter O Logo 1.svg" alt="logo icon">
+        <svg viewBox=""0 0 400 160>
+            <text x="6%" y="50%" dy=".32em" text-anchor="middle" class="loader-q">Q</text>
+            <text x="16%" y="50%" dy=".32em" text-anchor="middle" class="loader-l">l</text>
+            <text x="20%" y="50%" dy=".32em" text-anchor="middle" class="loader-i">i</text>
+            <text x="27%" y="50%" dy=".32em" text-anchor="middle" class="loader-c">c</text>
+            <text x="38%" y="50%" dy=".32em" text-anchor="middle" class="loader-k">k</text>
+        </svg>
+    </div>
     <section class="page-content">
         <header>
             <img src="./assets/Frame 1000004620.svg" alt="Qlick logo">
 
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="/">Home</a></li>
                     <li><a href="/">About</a></li>
                     <li><a href="/">Features</a></li>
                     <li><a href="/">Product</a></li>
@@ -26,7 +33,7 @@
             </nav>
 
             <button type="button" id="nav-btn">Explore</button>
-            <div class="menu">
+            <div class="menu" id="main-menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,7 +41,13 @@
         </header>
 
         <nav class="mobile-nav">
-            <img src="./assets/Frame 1000004620.svg" alt="Qlick logo">
+            <div class="top"><img src="./assets/Frame 1000004620.svg" alt="Qlick logo">
+            <div class="menu" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
@@ -47,7 +60,8 @@
 
         <section class="hero">
             <div class="hero-container">
-                <h1>The Art <img src="./assets/Chess piece.png" alt="chess piece"> of Human Expression, Uncover <br> The <span class="stories">Stories</span> Behind the Art <img src="./assets/Button image.jpeg" class="btn-image" alt="button image art"></h1>
+                <h1>The Art<img src="./assets/Chess piece.png" alt="chess piece">of Human Expression, Uncover <br> The <span class="stories">Stories</span> Behind the Art <span class="img-con"><img src="./assets/Button image.jpeg" class="btn-image" alt="button image art"></span></h1>
+                
 
                 <p>Discover new favorites among our diverse exhibitions, Uncover the stories and inspirations behind the art.</p>
 
@@ -62,5 +76,7 @@
             </div>
         </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 </body>
 </html>
